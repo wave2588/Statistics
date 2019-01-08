@@ -48,21 +48,3 @@ extension UIViewController {
         }
     }
 }
-
-public extension UIViewController {
-    
-    private struct AssociatedKeys {
-        static var viewDidLoadEventId = "viewDidLoadEventId"
-    }
-    
-
-    @IBInspectable var viewDidLoadEventId: String? {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.viewDidLoadEventId, newValue, .OBJC_ASSOCIATION_RETAIN)
-        }
-        get {
-            guard let id = objc_getAssociatedObject(self, &AssociatedKeys.viewDidLoadEventId) else { return nil }
-            return id as? String
-        }
-    }
-}

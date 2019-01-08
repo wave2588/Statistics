@@ -29,12 +29,13 @@ public extension StatisticsManager {
     
     func start() {
 
+        UIView.initializeAddGestureRecognizerMethod()
         UIButton.registerSendActionHook()
         UICollectionView.registerDidSelectedHook()
         
         UIViewController.registerViewDidLoadHook()
         
-        UIView.initializeAddGestureRecognizerMethod()
+        
     }
     
     /// stop 方法暂时不完善, 请勿调用

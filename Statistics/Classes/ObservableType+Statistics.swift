@@ -9,12 +9,6 @@
 import UIKit
 import RxSwift
 
-//public extension Observable where Element: UIGestureRecognizer {
-//    func statistics(id: String) -> Observable<Element> {
-//        return self.do(onNext: { $0.eventId = id })
-//    }
-//}
-
 public extension ObservableType where E: UIGestureRecognizer {
     
     func statistics(id: String) -> Observable<E> {

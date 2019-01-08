@@ -37,36 +37,3 @@ extension UIView {
     }
 }
 
-public extension UIGestureRecognizer {
-    
-    private struct AssociatedKeys {
-        static var eventId = "eventId"
-    }
-    
-    @IBInspectable var eventId: String? {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.eventId, newValue, .OBJC_ASSOCIATION_RETAIN)
-        }
-        get {
-            guard let id = objc_getAssociatedObject(self, &AssociatedKeys.eventId) else { return nil }
-            return id as? String
-        }
-    }
-}
-
-public extension UIView {
-    
-    private struct AssociatedKeys {
-        static var eventId = "eventId"
-    }
-    
-    @IBInspectable var eventId: String? {
-        set {
-            objc_setAssociatedObject(self, &AssociatedKeys.eventId, newValue, .OBJC_ASSOCIATION_RETAIN)
-        }
-        get {
-            guard let id = objc_getAssociatedObject(self, &AssociatedKeys.eventId) else { return nil }
-            return id as? String
-        }
-    }
-}

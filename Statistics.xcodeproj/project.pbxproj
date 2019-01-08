@@ -20,6 +20,12 @@
 		402B28EE21E495D700BD83F7 /* UICollectionView+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28E521E495D700BD83F7 /* UICollectionView+Statistics.swift */; };
 		402B28EF21E495D700BD83F7 /* UIScrollView+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28E621E495D700BD83F7 /* UIScrollView+Statistics.swift */; };
 		402B28F021E495D700BD83F7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28E721E495D700BD83F7 /* UITableView+Extension.swift */; };
+		402B28F321E4978000BD83F7 /* UICollectionView+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28F221E4978000BD83F7 /* UICollectionView+RX.swift */; };
+		402B28F521E4978B00BD83F7 /* UITableView+RX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28F421E4978B00BD83F7 /* UITableView+RX.swift */; };
+		402B28F721E498BB00BD83F7 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28F621E498BB00BD83F7 /* CollectionViewCell.swift */; };
+		402B28F921E498C200BD83F7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 402B28F821E498C100BD83F7 /* CollectionViewCell.xib */; };
+		402B28FB21E49C9D00BD83F7 /* EventID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28FA21E49C9D00BD83F7 /* EventID.swift */; };
+		402B28FD21E49E5200BD83F7 /* ControlEvent+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28FC21E49E5200BD83F7 /* ControlEvent+Statistics.swift */; };
 		DBF8A70FE35DC0E3DC3938D3 /* Pods_Statistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28338FB65B1626DED23C60E0 /* Pods_Statistics.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,12 @@
 		402B28E521E495D700BD83F7 /* UICollectionView+Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Statistics.swift"; sourceTree = "<group>"; };
 		402B28E621E495D700BD83F7 /* UIScrollView+Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Statistics.swift"; sourceTree = "<group>"; };
 		402B28E721E495D700BD83F7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		402B28F221E4978000BD83F7 /* UICollectionView+RX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RX.swift"; sourceTree = "<group>"; };
+		402B28F421E4978B00BD83F7 /* UITableView+RX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+RX.swift"; sourceTree = "<group>"; };
+		402B28F621E498BB00BD83F7 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		402B28F821E498C100BD83F7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		402B28FA21E49C9D00BD83F7 /* EventID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventID.swift; sourceTree = "<group>"; };
+		402B28FC21E49E5200BD83F7 /* ControlEvent+Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControlEvent+Statistics.swift"; sourceTree = "<group>"; };
 		5448989702201B4E74A56FC9 /* Pods-Statistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statistics.debug.xcconfig"; path = "Target Support Files/Pods-Statistics/Pods-Statistics.debug.xcconfig"; sourceTree = "<group>"; };
 		E0C9443AE541B01955E3CDE5 /* Pods-Statistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statistics.release.xcconfig"; path = "Target Support Files/Pods-Statistics/Pods-Statistics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,9 +98,12 @@
 		402B28CB21E494EE00BD83F7 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				402B28F121E4977100BD83F7 /* Extension */,
 				402B28DE21E495D700BD83F7 /* Classes */,
 				402B28CC21E494EE00BD83F7 /* AppDelegate.swift */,
 				402B28CE21E494EE00BD83F7 /* ViewController.swift */,
+				402B28F621E498BB00BD83F7 /* CollectionViewCell.swift */,
+				402B28F821E498C100BD83F7 /* CollectionViewCell.xib */,
 				402B28D021E494EE00BD83F7 /* Main.storyboard */,
 				402B28D321E494EF00BD83F7 /* Assets.xcassets */,
 				402B28D521E494EF00BD83F7 /* LaunchScreen.storyboard */,
@@ -100,16 +115,27 @@
 		402B28DE21E495D700BD83F7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				402B28FC21E49E5200BD83F7 /* ControlEvent+Statistics.swift */,
+				402B28FA21E49C9D00BD83F7 /* EventID.swift */,
 				402B28DF21E495D700BD83F7 /* ObservableType+Statistics.swift */,
 				402B28E021E495D700BD83F7 /* StatisticsManager.swift */,
-				402B28E121E495D700BD83F7 /* UIView+Statistics.swift */,
 				402B28E221E495D700BD83F7 /* UIButton+Statistics.swift */,
-				402B28E421E495D700BD83F7 /* UIViewController+Statistics.swift */,
 				402B28E521E495D700BD83F7 /* UICollectionView+Statistics.swift */,
 				402B28E621E495D700BD83F7 /* UIScrollView+Statistics.swift */,
 				402B28E721E495D700BD83F7 /* UITableView+Extension.swift */,
+				402B28E121E495D700BD83F7 /* UIView+Statistics.swift */,
+				402B28E421E495D700BD83F7 /* UIViewController+Statistics.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		402B28F121E4977100BD83F7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				402B28F421E4978B00BD83F7 /* UITableView+RX.swift */,
+				402B28F221E4978000BD83F7 /* UICollectionView+RX.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C0A1359ED25625F97E8B0CBE /* Frameworks */ = {
@@ -182,6 +208,7 @@
 			files = (
 				402B28D721E494EF00BD83F7 /* LaunchScreen.storyboard in Resources */,
 				402B28D421E494EF00BD83F7 /* Assets.xcassets in Resources */,
+				402B28F921E498C200BD83F7 /* CollectionViewCell.xib in Resources */,
 				402B28D221E494EE00BD83F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,15 +284,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				402B28EB21E495D700BD83F7 /* UIButton+Statistics.swift in Sources */,
+				402B28F321E4978000BD83F7 /* UICollectionView+RX.swift in Sources */,
 				402B28E921E495D700BD83F7 /* StatisticsManager.swift in Sources */,
 				402B28CF21E494EE00BD83F7 /* ViewController.swift in Sources */,
 				402B28EA21E495D700BD83F7 /* UIView+Statistics.swift in Sources */,
 				402B28E821E495D700BD83F7 /* ObservableType+Statistics.swift in Sources */,
 				402B28EF21E495D700BD83F7 /* UIScrollView+Statistics.swift in Sources */,
+				402B28FD21E49E5200BD83F7 /* ControlEvent+Statistics.swift in Sources */,
 				402B28EE21E495D700BD83F7 /* UICollectionView+Statistics.swift in Sources */,
+				402B28F721E498BB00BD83F7 /* CollectionViewCell.swift in Sources */,
+				402B28FB21E49C9D00BD83F7 /* EventID.swift in Sources */,
 				402B28F021E495D700BD83F7 /* UITableView+Extension.swift in Sources */,
 				402B28ED21E495D700BD83F7 /* UIViewController+Statistics.swift in Sources */,
 				402B28CD21E494EE00BD83F7 /* AppDelegate.swift in Sources */,
+				402B28F521E4978B00BD83F7 /* UITableView+RX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
