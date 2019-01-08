@@ -26,6 +26,8 @@
 		402B28F921E498C200BD83F7 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 402B28F821E498C100BD83F7 /* CollectionViewCell.xib */; };
 		402B28FB21E49C9D00BD83F7 /* EventID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28FA21E49C9D00BD83F7 /* EventID.swift */; };
 		402B28FD21E49E5200BD83F7 /* ControlEvent+Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28FC21E49E5200BD83F7 /* ControlEvent+Statistics.swift */; };
+		402B28FF21E4AA8500BD83F7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402B28FE21E4AA8500BD83F7 /* TableViewCell.swift */; };
+		402B290121E4AA8D00BD83F7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 402B290021E4AA8D00BD83F7 /* TableViewCell.xib */; };
 		DBF8A70FE35DC0E3DC3938D3 /* Pods_Statistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28338FB65B1626DED23C60E0 /* Pods_Statistics.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		402B28F821E498C100BD83F7 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		402B28FA21E49C9D00BD83F7 /* EventID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventID.swift; sourceTree = "<group>"; };
 		402B28FC21E49E5200BD83F7 /* ControlEvent+Statistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ControlEvent+Statistics.swift"; sourceTree = "<group>"; };
+		402B28FE21E4AA8500BD83F7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		402B290021E4AA8D00BD83F7 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		5448989702201B4E74A56FC9 /* Pods-Statistics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statistics.debug.xcconfig"; path = "Target Support Files/Pods-Statistics/Pods-Statistics.debug.xcconfig"; sourceTree = "<group>"; };
 		E0C9443AE541B01955E3CDE5 /* Pods-Statistics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statistics.release.xcconfig"; path = "Target Support Files/Pods-Statistics/Pods-Statistics.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +106,8 @@
 				402B28DE21E495D700BD83F7 /* Classes */,
 				402B28CC21E494EE00BD83F7 /* AppDelegate.swift */,
 				402B28CE21E494EE00BD83F7 /* ViewController.swift */,
+				402B28FE21E4AA8500BD83F7 /* TableViewCell.swift */,
+				402B290021E4AA8D00BD83F7 /* TableViewCell.xib */,
 				402B28F621E498BB00BD83F7 /* CollectionViewCell.swift */,
 				402B28F821E498C100BD83F7 /* CollectionViewCell.xib */,
 				402B28D021E494EE00BD83F7 /* Main.storyboard */,
@@ -207,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402B28D721E494EF00BD83F7 /* LaunchScreen.storyboard in Resources */,
+				402B290121E4AA8D00BD83F7 /* TableViewCell.xib in Resources */,
 				402B28D421E494EF00BD83F7 /* Assets.xcassets in Resources */,
 				402B28F921E498C200BD83F7 /* CollectionViewCell.xib in Resources */,
 				402B28D221E494EE00BD83F7 /* Main.storyboard in Resources */,
@@ -284,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402B28EB21E495D700BD83F7 /* UIButton+Statistics.swift in Sources */,
+				402B28FF21E4AA8500BD83F7 /* TableViewCell.swift in Sources */,
 				402B28F321E4978000BD83F7 /* UICollectionView+RX.swift in Sources */,
 				402B28E921E495D700BD83F7 /* StatisticsManager.swift in Sources */,
 				402B28CF21E494EE00BD83F7 /* ViewController.swift in Sources */,

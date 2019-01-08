@@ -16,6 +16,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var tableView: UITableView!
+    
     let items = BehaviorRelay<[Int]>(value: [0,1,2,3])
     
     override func viewDidLoad() {
@@ -26,6 +28,7 @@ class ViewController: UIViewController {
         }
 
         configureCollectionView()
+        configureTableView()
     }
 }
 
@@ -53,5 +56,27 @@ private extension ViewController {
     }
     
     func configureTableView() {
+        
+        tableView.rowHeight = 60
+        tableView.register(nibWithCellClass: TableViewCell.self)
+        items
+            .bind(to: tableView.rx.items(cellType: TableViewCell.self)) { ip, item, cell in
+            }
+            .disposed(by: rx.disposeBag)
+        
+        tableView.rx.itemSelected
+            .statistics(id: "6666")
+            .subscribe(onNext: { ip in
+            })
+            .disposed(by: rx.disposeBag)
+        
+        
+        tableView.rx
+            .modelSelected(String.self)
+            .subscribe(onNext: { _ in
+            
+            })
+            .disposed(by: rx.disposeBag)
+        
     }
 }
