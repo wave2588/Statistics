@@ -42,14 +42,13 @@ public extension UIView {
     }
 }
 
-public extension UIViewController {
+extension UIViewController {
     
     private struct AssociatedKeys {
         static var viewDidLoadEventId = "viewDidLoadEventId"
     }
     
-    
-    @IBInspectable var viewDidLoadEventId: String? {
+    @IBInspectable open var viewDidLoadEventId: String? {
         set {
             objc_setAssociatedObject(self, &AssociatedKeys.viewDidLoadEventId, newValue, .OBJC_ASSOCIATION_RETAIN)
         }

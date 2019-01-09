@@ -69,14 +69,5 @@ private extension ViewController {
             .subscribe(onNext: { ip in
             })
             .disposed(by: rx.disposeBag)
-        
-        
-        tableView.rx
-            .modelSelected(String.self)
-            .subscribe(onNext: { _ in
-            
-            })
-            .disposed(by: rx.disposeBag)
-        
     }
 }
